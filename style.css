@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(45deg, #454545, #0b0d0d);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    width: 100%;
+}
+
+/* ======== ScrollBar====== */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+
+/* ======= Back to Top ======= */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#myBtn>img{
+    width: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* position: fixed; */
+}
+
+nav>.logo {
+    justify-content: flex-start;
+}
+
+nav>.logo>img {
+    width: 70px;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+nav>ul>li {
+    padding: 20px;
+}
+
+nav>ul>li>a::after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #fff;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+nav>ul>li>a:hover:after {
+    width: 100%;
+    transition: width .3s linear;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home {
+    display: flex;
+    width: 99%;
+    align-items: center;
+    height: 91vh;
+    border: 1px solid;
+}
+
+.left_home {
+    border: 1px solid;
+    width: 70%;
+}
+
+.left_home>.content_about {
+    margin: 50px;
+}
+
+.content_about>p {
+    font-size: 20px;
+}
+
+.content_about>p>span {
+    font-size: 70px;
+    color: blue;
+    font-weight: 800;
+}
+
+.right_home {
+    border: 1px solid;
+    width: 30%;
+}
+
+section {
+    /* margin: 0 auto; */
+    height: 100vh;
+    width: 80%;
+}
