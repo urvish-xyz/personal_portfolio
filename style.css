@@ -121,16 +121,16 @@ nav>ul>li>a:hover:after {
 }
 
 .home {
-    margin-top: 60px;
+    margin: 0 auto;
     display: flex;
-    width: 99%;
+    width: 80%;
     align-items: center;
-    height: 91vh;
-    border: 1px solid;
+    height: 100vh;
+    /* border: 1px solid; */
 }
 
 .left_home {
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 70%;
 }
 
@@ -149,7 +149,7 @@ nav>ul>li>a:hover:after {
 }
 
 .right_home {
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 30%;
 }
 
@@ -163,8 +163,11 @@ section {
     margin: 0 auto;
     height: 91vh;
     width: 80%;
+    border-bottom: 1px solid;
 }
-
+.about{
+    border-top: 1px solid;
+}
 footer {
     height: 40px;
     width: 70%;
