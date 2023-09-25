@@ -71,6 +71,9 @@ a {
 }
 
 nav {
+    margin: 0 auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     height: 60px;
     width: 100%;
     display: flex;
@@ -78,6 +81,7 @@ nav {
     justify-content: space-around;
     position: fixed;
     background-color: #454545;
+    box-shadow: blue 0 0 5px;
 }
 
 nav>.logo {
@@ -118,6 +122,45 @@ nav>ul>li>a:hover:after {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.bg_shape {
+    height: 30rem;
+    width: 25rem;
+    /* background-color: black; */
+    background: linear-gradient(to left top, #e1059c, #461fac);
+    z-index: -1;
+    animation: shape_change 10s infinite;
+    position: absolute;
+}
+
+@keyframes shape_change {
+    0% {
+        border-radius: 48% 52% 49% 51% / 48% 77% 23% 52%;
+    }
+
+    20% {
+        border-radius: 60% 40% 60% 40% / 35% 63% 37% 65%;
+    }
+
+    40% {
+
+        border-radius: 38% 62% 47% 53% / 26% 50% 50% 74%;
+    }
+
+    60% {
+
+        border-radius: 51% 49% 65% 35% / 53% 72% 28% 47%;
+    }
+
+    90% {
+
+        border-radius: 84% 16% 84% 16% / 74% 37% 63% 26%;
+    }
+
+    100% {
+        border-radius: 48% 52% 49% 51% / 48% 77% 23% 52%;
+    }
 }
 
 .home {
@@ -165,9 +208,11 @@ section {
     width: 80%;
     border-bottom: 1px solid;
 }
-.about{
+
+.about {
     border-top: 1px solid;
 }
+
 footer {
     height: 40px;
     width: 70%;
