@@ -21,7 +21,6 @@ body {
     /* text-decoration: underline; */
 }
 
-
 /* ======== ScrollBar====== */
 
 ::-webkit-scrollbar {
@@ -125,12 +124,12 @@ nav>ul>li>a:hover:after {
 }
 
 .bg_shape {
-    height: 30rem;
+    height: 29rem;
     width: 25rem;
-    /* background-color: black; */
+    opacity: 40%;
     background: linear-gradient(to left top, #e1059c, #461fac);
     z-index: -1;
-    animation: shape_change 10s infinite;
+    animation: shape_change 10s infinite ease-in-out;
     position: absolute;
 }
 
@@ -155,7 +154,7 @@ nav>ul>li>a:hover:after {
 
     90% {
 
-        border-radius: 84% 16% 84% 16% / 74% 37% 63% 26%;
+        border-radius: 30% 36% 54% 26% / 74% 37% 63% 26%;
     }
 
     100% {
