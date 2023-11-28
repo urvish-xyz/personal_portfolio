@@ -1,63 +1,106 @@
+.skills {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
 
-.skills{
+.skill-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar {
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+}
+
+.skill-per {
+  height: 14px;
+  background: #0000FF;
+  /* background: #d13639; */
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #72A0C1;
+  /* background: #f1f1f1; */
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  /* background: #f1f1f1; */
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+
+  to {
     width: 100%;
-    max-width: 600px;
-    padding: 0 20px;
   }
-  
-  .skill-name{
-    font-size: 18px;
-    font-weight: 700;
-    color: #f1f1f1;
-    text-transform: uppercase;
-    margin: 20px 0;
+}
+
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.circle {
+  background: plum;
+  width: 300px;
+  height: 400px;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  overflow: hidden;
+  animation: morph 3s linear infinite;
+}
+
+.circle img {
+  width: 100%;
+  transition: all .3s;
+}
+
+.circle>img:hover {
+  transform: scale(1.2);
+}
+
+
+@keyframes morph {
+
+  0%,
+  100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
   }
-  
-  .skill-bar{
-    height: 14px;
-    background: #282828;
-    border-radius: 3px;
+
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
   }
-  
-  .skill-per{
-    height: 14px;
-    background: #0000FF;
-    /* background: #d13639; */
-    border-radius: 3px;
-    position: relative;
-    animation: fillBars 2.5s 1;
+
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
   }
-  
-  .skill-per::before{
-    content: attr(per);
-    position: absolute;
-    padding: 4px 6px;
-    background: #72A0C1;
-    /* background: #f1f1f1; */
-    border-radius: 4px;
-    font-size: 12px;
-    top: -35px;
-    right: 0;
-    transform: translateX(50%);
-  }
-  
-  .skill-per::after{
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    /* background: #f1f1f1; */
-    top: -20px;
-    right: 0;
-    transform: translateX(50%) rotate(45deg);
-    border-radius: 2px;
-  }
-  
-  @keyframes fillBars{
-    from{
-      width: 0;
-    }
-    to{
-      width: 100%;
-    }
-  }
+}
