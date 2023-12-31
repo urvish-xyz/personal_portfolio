@@ -13,25 +13,25 @@
 }
 
 .skill-bar {
-  height: 14px;
+  height: 5px;
   background: #282828;
   border-radius: 3px;
 }
 
 .skill-per {
-  height: 14px;
-  background: #0000FF;
+  height: 5px;
+  background: #7fd7a1;
   /* background: #d13639; */
   border-radius: 3px;
   position: relative;
-  animation: fillBars 2.5s 1;
+  animation: fillBars 5s 1;
 }
 
 .skill-per::before {
   content: attr(per);
   position: absolute;
   padding: 4px 6px;
-  background: #72A0C1;
+  background: #58c058;
   /* background: #f1f1f1; */
   border-radius: 4px;
   font-size: 12px;
@@ -62,7 +62,6 @@
   }
 }
 
-
 .wrap {
   display: flex;
   align-items: center;
@@ -71,6 +70,7 @@
 }
 
 .circle {
+  margin: 10px 0;
   background: plum;
   width: 300px;
   height: 400px;
@@ -81,16 +81,14 @@
 
 .circle img {
   width: 100%;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-.circle>img:hover {
+.circle > img:hover {
   transform: scale(1.2);
 }
 
-
 @keyframes morph {
-
   0%,
   100% {
     border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
@@ -103,4 +101,16 @@
   67% {
     border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
   }
+}
+
+.project-box {
+  position: relative;
+}
+
+.project-box img {
+  transition: scale 0.3s ease;
+}
+
+.project-box:hover img {
+  scale: 1.2;
 }

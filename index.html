@@ -18,11 +18,12 @@
   <style>
     * {
       letter-spacing: 0.1em;
+      font-family: 'Poppins';
     }
 
     ::selection {
       background: transparent;
-      text-shadow: 5px 5px 5px #11e511;
+      text-shadow: 5px 3px 4px #11e511;
     }
 
     /* ======== ScrollBar====== */
@@ -45,7 +46,7 @@
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-      background: blue;
+      background: #58c058;
     }
 
     form>input {
@@ -57,6 +58,7 @@
 
 <body class="text-white bg-[#404258]">
   <div class="flex flex-col h-screen">
+    <!-- Navbar -->
     <div class="w-full">
       <header
         class="flex flex-wrap items-center justify-between w-full h-20 max-w-4xl p-3 mx-auto border-2 border-solid border-sky-500 hidden-xs">
@@ -109,132 +111,174 @@
       <hr class="w-[calc(100vw-10rem)] m-auto" />
 
       <!-- Education -->
-      <div class="flex justify-center w-3/4 m-auto">Education</div>
-      <hr class="w-[calc(100vw-10rem)] m-auto" />
-      <section id="about" class="flex min-h-[calc(100vh-5rem)] justify-center items-center flex-1 max-md:flex-col">
-        <div class="flex items-center justify-center flex-1 p-5 max-md:w-full max-lg:h-full max-sm:h-1/2">
+      <div class="" id="about">
+        <div class="flex justify-center w-3/4 m-auto">Education</div>
+        <hr class="w-[calc(100vw-10rem)] m-auto" />
+        <section class="flex min-h-[calc(100vh-5rem)] justify-center items-center flex-1 max-md:flex-col">
+          <div class="flex items-center justify-center flex-1 p-5 max-md:w-full max-lg:h-full max-sm:h-1/2">
 
-          <p class="sm:px-32">In 2022, I completed my <span class="text-red-500 underline">Bachelor of Science in
-              Chemistry</span> at President Science College,
-            Ghatlodia, Ahmedabad.
-            Currently, I am pursuing Full Stack Development as an intern at The Special Character.
+            <p class="sm:px-32">In 2022, I completed my <span class="text-red-500 underline">Bachelor of Science in
+                Chemistry</span> at President Science College,
+              Ghatlodia, Ahmedabad.
+              Currently, I am pursuing Full Stack Development as an intern at The Special Character.
 
-            My degree in chemistry has given me a strong foundation in the natural sciences, including a deep
-            understanding of chemical processes and principles. This knowledge has been invaluable in my studies of full
-            stack development, as it has helped me to grasp complex concepts such as data structures and algorithms.
+              My degree in chemistry has given me a strong foundation in the natural sciences, including a deep
+              understanding of chemical processes and principles. This knowledge has been invaluable in my studies of
+              full
+              stack development, as it has helped me to grasp complex concepts such as data structures and algorithms.
 
-            At The Special Character, I am gaining hands-on experience in all aspects of full stack development, from
-            back-end development to front-end development. I am also learning how to work with modern development tools
-            and technologies, such as React, Node.js, and SQL.
+              At The Special Character, I am gaining hands-on experience in all aspects of full stack development, from
+              back-end development to front-end development. I am also learning how to work with modern development
+              tools
+              and technologies, such as React, Node.js, and SQL.
 
-            I am passionate about full stack development and I am excited to learn and grow in this field. I am
-            confident
-            that my skills and knowledge will make me a valuable asset to any team.</p>
-        </div>
-        <!-- <div class="flex items-center justify-center flex-1 max-md:w-full max-lg:1/2 grow">Patel</div> -->
-      </section>
+              I am passionate about full stack development and I am excited to learn and grow in this field. I am
+              confident
+              that my skills and knowledge will make me a valuable asset to any team.</p>
+          </div>
+          <!-- <div class="flex items-center justify-center flex-1 max-md:w-full max-lg:1/2 grow">Patel</div> -->
+        </section>
+      </div>
       <hr class="w-[calc(100vw-10rem)] m-auto" />
 
       <!-- Skills -->
-      <div class="flex justify-center w-3/4 m-auto">Skills</div>
-      <hr class="w-[calc(100vw-10rem)] m-auto" />
-      <section id="skills" class="flex min-h-[calc(100vh-5rem)] justify-center items-center flex-1 max-md:flex-col">
-        <div class="flex items-center justify-center flex-1 p-5 max-md:w-full max-lg:h-full max-sm:h-1/2">
-          <div class="skills">
-            <div class="skill">
-              <div class="skill-name">HTML</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="90%" style="max-width:90%"></div>
+      <div class="" id="skills">
+        <div class="flex justify-center w-3/4 m-auto">Skills</div>
+        <hr class="w-[calc(100vw-10rem)] m-auto" />
+        <section class="flex min-h-[calc(100vh-5rem)] justify-center items-center flex-1 max-md:flex-col">
+          <div class="flex items-center justify-center flex-1 p-5 max-md:w-full max-lg:h-full max-sm:h-1/2">
+            <div class="skills">
+              <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="90%" style="max-width:90%"></div>
+                </div>
               </div>
-            </div>
 
-            <div class="skill">
-              <div class="skill-name">CSS</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="70%" style="max-width:70%"></div>
+              <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="70%" style="max-width:70%"></div>
+                </div>
               </div>
-            </div>
 
-            <div class="skill">
-              <div class="skill-name">Javascript</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="60%" style="max-width:60%"></div>
+              <div class="skill">
+                <div class="skill-name">Javascript</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="60%" style="max-width:60%"></div>
+                </div>
               </div>
-            </div>
 
-            <div class="skill">
-              <div class="skill-name">tailwindcss</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="70%" style="max-width:60%"></div>
+              <div class="skill">
+                <div class="skill-name">tailwindcss</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="70%" style="max-width:70%"></div>
+                </div>
               </div>
+
+
             </div>
-
-
           </div>
-        </div>
-        <!-- <div class="flex items-center justify-center flex-1 max-md:w-full max-lg:1/2 grow">Patel</div> -->
-      </section>
+          <!-- <div class="flex items-center justify-center flex-1 max-md:w-full max-lg:1/2 grow">Patel</div> -->
+        </section>
+      </div>
       <hr class="w-[calc(100vw-10rem)] m-auto" />
 
       <!-- Project -->
-      <div class="flex justify-center w-3/4 m-auto">Project</div>
-      <hr class="w-[calc(100vw-10rem)] m-auto" />
-      <section id="project" class="flex min-h-[calc(100vh-5rem)] justify-center items-center flex-1 max-md:flex-col">
-        <div class="flex items-center justify-center flex-1 max-md:w-full max-lg:h-full max-sm:h-1/2">
-          Projects Will Update soon
-        </div>
-      </section>
+      <div class="" id="project">
+        <div class="flex justify-center w-3/4 m-auto">Project</div>
+        <hr class="w-[calc(100vw-10rem)] m-auto" />
+        <section class="flex min-h-[calc(100vh-5rem)] justify-center items-center flex-1 max-md:flex-col">
+          <div class="flex items-center justify-center flex-1 max-md:w-full max-lg:h-full max-sm:h-1/2">
+
+
+
+
+            <div class="flex flex-wrap justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <a href="https://urvish-xyz.github.io/Stock_Profit_Calculator/" target="_blank">
+                <div
+                  class="relative w-full h-40 overflow-hidden bg-blue-500 sm:w-40 sm:h-40 md:h-60 md:w-80 project-box">
+                  <img src="assets/Stok_Profit_Calc.png" alt="Project 1" class="object-cover w-full h-full " />
+                  <div class="absolute inset-0 flex flex-col items-center justify-end p-4 text-center text-white">
+                    <p class="p-1 bg-[#434343] rounded-md">Stock Profit Calculator</p>
+                  </div>
+                </div>
+              </a>
+              <a href="https://urvish-xyz.github.io/crush_date/" target="_blank">
+                <div
+                  class="relative w-full h-40 overflow-hidden bg-green-500 sm:w-40 sm:h-40 md:h-60 md:w-80 project-box">
+                  <img src="assets/crush_date.png" alt="Project 2" class="object-cover w-full h-full " />
+                  <div class="absolute inset-0 flex flex-col items-center justify-end p-4 text-center text-white">
+                    <p class="p-1 bg-[#434343] rounded-md">Crush Date</p>
+                  </div>
+                </div>
+              </a>
+              <a href="https://urvish-xyz.github.io/E-commerce-product-page/">
+                <div
+                  class="relative w-full h-40 overflow-hidden bg-yellow-500 sm:w-40 sm:h-40 md:h-60 md:w-80 project-box">
+                  <img src="assets/E-commerce-product-page.png" alt="Project 3" class="object-cover w-full h-full " />
+                  <div class="absolute inset-0 flex flex-col items-center justify-end p-4 text-center text-white">
+                    <p class="p-1 bg-[#434343] rounded-md">E-commerce-product-page</p>
+                  </div>
+                </div>
+              </a>
+              <a href="https://hr-bill-payment.vercel.app/" target="_blank">
+                <div
+                  class="relative w-full h-40 overflow-hidden bg-red-500 sm:w-40 sm:h-40 md:h-60 md:w-80 project-box">
+                  <img src="assets/HR-Bill_Payment.png" alt="Project 4" class="object-cover w-full h-full " />
+                  <div class="absolute inset-0 flex flex-col items-center justify-end p-4 text-center text-white">
+                    <p class="p-1 bg-[#434343] rounded-md">HR Bill Payment Services</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+
+          </div>
+        </section>
+      </div>
       <hr class="w-[calc(100vw-10rem)] m-auto" />
 
       <!-- Contact -->
-      <div class="flex justify-center w-3/4 m-auto">Contact</div>
-      <hr class="w-[calc(100vw-10rem)] m-auto" />
-      <section id="contact" class="flex h-[calc(100vh-5rem)] justify-center flex-1 max-md:flex-col ">
-        <div class="flex items-center flex-1 max-md:w-full max-md:h-1/2 max-lg:h-full">
-          <div class="w-auto mx-auto">
-            <form action="" method="post" class="flex flex-col gap-6 text-black">
-              <input type="text" name="fname" id="fname" placeholder="Full Name">
-              <input type="tel" name="tel" id="tel" placeholder="Mobile No.">
-              <input type="email" name="email" id="email" placeholder="Email ID">
-              <input type="text" name="desc" id="desc" placeholder="Description" class="h-20">
-              <button type="submit"
-                class="px-4 py-2 font-semibold text-blue-700 bg-transparent border border-blue-500 rounded hover:bg-blue-500 hover:text-white hover:border-transparent">Submit</button>
-            </form>
-          </div>
-        </div>
-        <!-- <div class="flex flex-col items-center justify-center flex-1 max-md:w-full max-md:h-1/2 max-lg:h-full">
-          <img src="assets/urvish.png" alt="" class="sm:h-1/2 max-sm:h-3/4">
-          <div class="">
-            <ul class="flex justify-center gap-8">
-              <li><a href="https://www.instagram.com/urvish.xyz/" target="_blank"><i
-                    class="fa-brands fa-instagram"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/urvish-xyz/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-              </li>
-              <li><a href="https://github.com/urvish-xyz" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-              <li><a href="https://twitter.com/UrvishXyz" target="_blank"><i
-                    class="fa-brands fa-square-x-twitter"></i></a></li>
-            </ul>
-          </div>
-        </div> -->
-        <div class="flex flex-col items-center justify-center flex-1 wrap max-md:w-full max-md:h-1/2 max-lg:h-full">
-
-          <div class="circle">
-
-            <img src='assets/urvish.png' alt=''>
-
+      <div class="" id="contact">
+        <div class="flex justify-center w-3/4 m-auto">Contact</div>
+        <hr class="w-[calc(100vw-10rem)] m-auto" />
+        <section class="flex h-[calc(100vh-5rem)] justify-center flex-1 max-md:flex-col ">
+          <div class="flex items-center flex-1 max-md:w-full max-md:h-1/2 max-lg:h-full">
+            <div class="w-auto mx-auto">
+              <form action="" method="post" class="flex flex-col gap-6 text-black">
+                <input type="text" name="fname" id="fname" placeholder="Full Name">
+                <input type="tel" name="tel" id="tel" placeholder="Mobile No.">
+                <input type="email" name="email" id="email" placeholder="Email ID">
+                <input type="text" name="desc" id="desc" placeholder="Description" class="h-20">
+                <button type="submit"
+                  class="px-4 py-2 font-semibold text-[#58c058] bg-transparent border border-[#58c058] rounded hover:bg-[#58c058] hover:text-white hover:border-transparent">Submit</button>
+              </form>
+            </div>
           </div>
 
-        </div>
-      </section>
+          <div class="flex flex-col items-center justify-center flex-1 wrap max-md:w-full max-md:h-1/2 max-lg:h-full">
+
+            <div class="circle">
+
+              <img src='assets/urvish.png' alt='' loading="lazy">
+
+            </div>
+
+          </div>
+        </section>
+      </div>
       <hr class="w-[calc(100vw-10rem)] m-auto" />
 
       <footer id="footer" class="w-3/4">
-        <div class="mx-auto">
+        <div class="m-auto">
           <div class="">&copy; Urvish Patel | All rights reserved</div>
         </div>
       </footer>
     </main>
   </div>
+
 </body>
 
 </html>
