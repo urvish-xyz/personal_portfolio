@@ -77,18 +77,29 @@
         <a href="" class="flex items-center px-4 py-2 text-3xl font-extrabold bg-purple-300 rounded">
           Urvish.Dev
         </a>
-        <button id="menuButton" class="flex ml-auto md:hidden">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
+        <input type="checkbox" id="openSidebarMenu" class="md:hidden">
+        <label for="openSidebarMenu" class="sidebarIconToggle" class="md:hidden">
+          <div class="spinner top md:hidden"></div>
+          <div class="spinner middle md:hidden"></div>
+          <div class="spinner bottom md:hidden"></div>
+        </label>
+        <div id="sidebarMenu" class="md:hidden">
+          <ul class="menu">
+            <li><a href="#home" onclick="hideMenu()">Home</a></li>
+            <li><a href="#about" onclick="hideMenu()">About Us</a></li>
+            <li><a href="#skills" onclick="hideMenu()">Skills</a></li>
+            <li><a href="#project" onclick="hideMenu()">Products</a></li>
+            <li><a href="#contact" onclick="hideMenu()">Contact Us</a></li>
+          </ul>
+        </div>
+
         <nav class="right-0 hidden gap-3 md:flex">
           <a href="#home"
-            class="inline-block cursor-pointer hover:underline hover:text-green-500 hover:duration-300">Home</a>
-          <a href="#about" class="hover:underline hover:text-green-500 hover:duration-300">About</a>
-          <a href="#skills" class="hover:underline hover:text-green-500 hover:duration-300">Skills</a>
-          <a href="#project" class="hover:underline hover:text-green-500 hover:duration-300">Project</a>
-          <a href="#contact" class="hover:underline hover:text-green-500 hover:duration-300">Contact</a>
+            class="inline-block no-underline cursor-pointer hover:no-underline hover:text-green-500 hover:duration-300">Home</a>
+          <a href="#about" class="hover:no-underline hover:text-green-500 hover:duration-300">About</a>
+          <a href="#skills" class="hover:no-underline hover:text-green-500 hover:duration-300 ">Skills</a>
+          <a href="#project" class="hover:no-underline hover:text-green-500 hover:duration-300 ">Project</a>
+          <a href="#contact" class="hover:no-underline hover:text-green-500 hover:duration-300 ">Contact</a>
         </nav>
       </header>
     </div>
@@ -97,7 +108,7 @@
       <!-- Home -->
       <section id="home" class="flex min-h-[calc(100vh-5rem)] justify-center flex-1 max-md:flex-col">
         <div class="flex items-center justify-center flex-1 max-md:w-full max-md:h-1/2 max-lg:h-full">
-          <div class="w-auto h-auto px-32 max-md:px-7">
+          <div class="w-auto h-auto px-32 max-md:px-7 drop-in">
             I'm <span class="text-6xl font-semibold text-white">Urvish</span>
             <span class="text-4xl">Patel</span>
             <p class="py-4 text-2xl">
@@ -206,7 +217,7 @@
 
 
 
-            <div class="flex flex-wrap justify-center gap-4 space-y-4 sm:space-y-0 sm:space-x-4">
+            <!-- <div class="flex flex-wrap justify-center gap-4 space-y-4 sm:space-y-0 sm:space-x-4">
               <a href="https://urvish-xyz.github.io/Stock_Profit_Calculator/" target="_blank">
                 <div
                   class="relative w-full h-40 overflow-hidden bg-blue-500 sm:w-40 sm:h-40 md:h-60 md:w-80 project-box">
@@ -243,8 +254,18 @@
                   </div>
                 </div>
               </a>
-            </div>
+            </div> -->
 
+            <div class="images">
+              <a href="https://urvish-xyz.github.io/Stock_Profit_Calculator/" target="_blank"><img
+                  src="assets/Stok_Profit_Calc.png" alt=""></a>
+              <a href="https://urvish-xyz.github.io/crush_date/" target="_blank"><img src="assets/crush_date.png"
+                  alt=""></a>
+              <a href="https://urvish-xyz.github.io/E-commerce-product-page/" target="_blank"><img
+                  src="assets/E-commerce-product-page.png" alt=""></a>
+              <a href="https://hr-bill-payment.vercel.app/" target="_blank"><img src="assets/HR-Bill_Payment.png"
+                  alt=""></a>
+            </div>
 
 
           </div>
@@ -256,9 +277,9 @@
       <div class="" id="contact">
         <div class="flex justify-center w-3/4 m-auto">Contact</div>
         <hr class="w-[calc(100vw-10rem)] m-auto" />
-        <section class="flex h-[calc(100vh-5rem)] justify-center flex-1 max-md:flex-col ">
+        <section class="flex min-h-[calc(100vh-5rem)] justify-center flex-1 max-md:flex-col">
           <div class="flex items-center flex-1 max-md:w-full max-md:h-1/2 max-lg:h-full">
-            <div class="w-auto mx-auto">
+            <div class="w-auto mx-auto max-md:my-3">
               <form action="" method="post" class="flex flex-col gap-6 text-black">
                 <input type="text" name="fname" id="fname" placeholder="Full Name">
                 <input type="tel" name="tel" id="tel" placeholder="Mobile No.">
@@ -270,7 +291,8 @@
             </div>
           </div>
 
-          <div class="flex flex-col items-center justify-center flex-1 wrap max-md:w-full max-md:h-1/2 max-lg:h-full">
+          <div
+            class="flex flex-col items-center justify-center flex-1 max-md:my-4 wrap max-md:w-full max-md:h-1/2 max-lg:h-full">
 
             <div class="circle">
 
@@ -290,7 +312,7 @@
       </footer>
     </main>
   </div>
-
+<script src="script.js"></script>
 </body>
 
 </html>
