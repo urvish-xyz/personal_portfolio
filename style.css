@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .skills {
   width: 100%;
   max-width: 600px;
@@ -159,7 +164,7 @@
   width: 250px;
   margin-top: 60px;
   transform: translateX(250px);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   background: #212121;
   z-index: 100;
 }
