@@ -66,6 +66,7 @@
       width: 200px;
     }
   </style>
+
 </head>
 
 <body class="text-white bg-[#404258]">
@@ -111,14 +112,14 @@
     <main id="Home" class="overflow-y-auto bg-gradient-to-r from-[#454545] to-[#0b0d0d] md:flex-row scroll-smooth">
       <!-- Home -->
       <section id="home" class="flex min-h-[calc(100vh-5rem)] justify-center flex-1 max-md:flex-col my-10">
-        <div class="flex items-center justify-center flex-1 max-md:w-full max-md:h-1/2 max-lg:h-full">
+        <div class="flex items-center justify-center flex-1 max-md:w-full max-md:h-1/2 ">
           <div class="w-auto h-auto px-32 max-md:px-7 drop-in">
             I'm <span class="text-6xl font-semibold text-white">Urvish</span>
             <span class="text-4xl">Patel</span>
             <p class="py-4 text-2xl">
               I'm a Lead Full Stack Developer based in Ahmedabad.
             </p>
-            <p class="py-2">
+            <!-- <p class="py-2">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt,
               in? Iusto quos saepe necessitatibus sint inventore! Odit
               pariatur dolore molestias incidunt perferendis maiores dolor
@@ -126,7 +127,7 @@
               commodi aliquam voluptas non, maxime sapiente quos asperiores
               neque aliquid. Cupiditate sapiente impedit eos praesentium dicta
               recusandae eveniet porro.
-            </p>
+            </p> -->
           </div>
         </div>
         <div class="flex items-center justify-center flex-1 max-md:w-full max-lg:1/2 grow">
@@ -141,10 +142,13 @@
       <div class="" id="about">
         <div class="flex justify-center w-3/4 m-auto">Education</div>
         <hr class="w-[calc(100vw-10rem)] m-auto" />
-        <section class="flex min-h-[calc(100vh-5rem)] justify-center items-center flex-1 max-md:flex-col">
-          <div class="flex items-center justify-center flex-1 p-5 max-md:w-full max-lg:h-full max-sm:h-1/2">
-
-            <p class="sm:px-32">In 2022, I completed my <span class="text-red-500 underline">Bachelor of Science in
+        <section class="flex min-h-[calc(100vh-5rem)] justify-center items-center flex-1 max-md:flex-col my-10">
+          <div class="flex items-center justify-center flex-1 max-md:w-full max-md:h-1/2 max-lg:h-full md:hidden">
+            <img class="w-96 transition-all .3s hover:translate-x-4 "
+              src="https://parspng.com/wp-content/uploads/2023/03/educationpng.parspng.com-11.png" alt="" />
+          </div>
+          <div class="flex items-center justify-center flex-1 max-md:w-full max-md:h-1/2 max-lg:h-full">
+            <p class="sm:px-32">In 2022, Icompleted my <span class="text-red-500 underline">Bachelor of Science in
                 Chemistry</span> at President Science College,
               Ghatlodia, Ahmedabad.
               Currently, I am pursuing Full Stack Development as an intern at The Special Character.
@@ -163,7 +167,7 @@
               confident
               that my skills and knowledge will make me a valuable asset to any team.</p>
           </div>
-          <!-- <div class="flex items-center justify-center flex-1 max-md:w-full max-lg:1/2 grow">Patel</div> -->
+
         </section>
       </div>
       <hr class="w-[calc(100vw-10rem)] m-auto" />
@@ -284,12 +288,13 @@
         <section class="flex min-h-[calc(100vh-5rem)] justify-center flex-1 max-md:flex-col">
           <div class="flex items-center flex-1 max-md:w-full max-md:h-1/2 max-lg:h-full">
             <div class="w-auto mx-auto max-md:my-3">
-              <form action="" method="post" class="flex flex-col gap-6 text-black">
+              <form method="POST" class="flex flex-col gap-6 text-black" id="form">
+                <div id="res"></div>
                 <input type="text" name="fname" id="fname" placeholder="Full Name">
                 <input type="tel" name="tel" id="tel" placeholder="Mobile No.">
                 <input type="email" name="email" id="email" placeholder="Email ID">
                 <input type="text" name="desc" id="desc" placeholder="Description" class="h-20">
-                <button type="submit"
+                <button id="btn"
                   class="px-4 py-2 font-semibold text-[#58c058] bg-transparent border border-[#58c058] rounded hover:bg-[#58c058] hover:text-white hover:border-transparent">Submit</button>
               </form>
             </div>
@@ -314,6 +319,7 @@
           <div class="">&copy; Urvish Patel | All rights reserved</div>
         </div>
       </footer>
+
     </main>
   </div>
   <script src="script.js"></script>
