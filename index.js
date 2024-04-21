@@ -36,3 +36,36 @@ class nav_link {
 }
 
 const nav = new nav_link();
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('nav ul li a');
+console.log(navLinks);
+  function setActiveLink() {
+    const scrollPosition = window.scrollY;
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100; // Adjust for any fixed header height
+      const sectionBottom = sectionTop + section.offsetHeight;
+
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        const sectionId = section.getAttribute('id');
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === `#${sectionId}`) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }
+    });
+  }
+
+  // Add event listener for scroll event
+  window.addEventListener('scroll', setActiveLink);
+
+  // Call setActiveLink initially to set active link on page load
+  setActiveLink();
+});
+
